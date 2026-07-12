@@ -292,6 +292,31 @@
     opacity: 0.85;
   }
 
+  @media (max-width: 600px) {
+    .milonga-row.has-photo {
+      height: auto;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .milonga-row.has-photo .milonga-time,
+    .milonga-row.has-photo .milonga-dj {
+      flex: 0 1 auto;
+      margin: 0.2em 0;
+    }
+
+    .milonga-row.has-photo .milonga-time::after {
+      display: none;
+    }
+
+    .milonga-photo {
+      height: auto;
+      width: 50%;
+      max-width: 160px;
+      margin: 0.8em auto 0;
+    }
+  }
+
   .milonga-time::after {
     content: "";
     position: absolute;
