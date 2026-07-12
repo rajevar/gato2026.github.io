@@ -272,6 +272,26 @@
     position: relative;
   }
 
+  .milonga-row.has-photo {
+    height: 220px;
+  }
+
+  .milonga-photo {
+    height: 80%;
+    width: auto;
+    margin-left: auto;
+    object-fit: cover;
+    border-radius: 0.7em;
+    border: 2px solid var(--accent);
+    box-shadow: 0 2px 8px rgba(236, 72, 153, 0.18);
+  }
+
+  .milonga-note {
+    font-size: 0.85em;
+    font-style: italic;
+    opacity: 0.85;
+  }
+
   .milonga-time::after {
     content: "";
     position: absolute;
